@@ -1,0 +1,23 @@
+@import './abstracts/variables';
+@import './abstracts/mixins';
+@import './base/reset';
+@import './components/main';
+@import './components/banner';
+@import './components/menubar';
+@import './components/gallery';
+@import './components/imageview';
+@import './components/about';
+@import './components/image-editor';
+
+body{
+	background-color: $primary-color;
+	font-family: $font-stack
+}
+
+.copyright{
+	font-size:0.7rem;
+	color: $primary-text-color;
+	text-align:center;
+	padding: 0.625rem;
+	line-height: 2rem;
+}

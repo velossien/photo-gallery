@@ -1,0 +1,62 @@
+.About {
+	color: $primary-text-color;
+	line-height: 2rem;
+	letter-spacing: 0.05rem;
+	max-width: 43rem;
+	margin-left: auto;
+	margin-right: auto;
+
+	@include breakpoint(md){
+		padding-left: 15%;
+		padding-right: 15%;
+	}
+
+	@include breakpoint(sm){
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
+	.my-img{
+		position:relative;
+		display: block;
+		float:left;
+		padding-top: 6.0rem;
+		padding-right:3rem;
+		z-index:-1;
+
+		@include breakpoint(md){
+			display:none;
+		}
+	}
+	.about-block{
+		display: block;
+		padding-top: 8rem;
+		z-index:-1;
+	}
+
+	p{
+		font-size: 0.90rem;
+		text-align: center;
+		text-decoration: none;
+		padding-bottom:3.0rem;
+	}	
+
+	.center {
+		text-align: center;
+	}
+
+	ul{
+		text-align: center;
+		text-decoration: none;
+		padding-bottom:2rem;
+	}
+
+	a{
+		text-decoration:none;
+		color: $link-color;
+
+		&:hover {
+			color: $link-hover-color;
+		}
+	}
+}

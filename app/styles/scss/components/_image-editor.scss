@@ -1,0 +1,47 @@
+.Admin {
+	color: $primary-text-color;
+	line-height: 2rem;
+	letter-spacing: 0.05rem;
+	max-width: 43.75rem;
+	margin:auto;
+	text-align: center;
+	
+	h1{		
+		font-size: 1.5em;
+		font-weight: bold;
+		text-align: center;
+		padding-bottom: 1.875rem;
+		padding-top:1.875rem;
+	}
+
+	p{
+		font-size: 0.95rem;
+		text-align: center;
+		text-decoration: none;
+		padding-top: 0.625rem;
+	}	
+
+	.center {
+		text-align: center;
+	}
+
+	input {
+		margin-bottom:1.25rem;
+	}
+
+	button {
+		border: none;
+		background: $secondary-color;
+		color: white;
+		padding: 0.625rem;
+		margin:auto; 
+		display:block;
+
+		&:hover{
+			border: none;
+			background:$button-press-color;
+			color: white;
+			padding:0.625rem;
+		}
+	}
+}
