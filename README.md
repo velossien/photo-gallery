@@ -1,3 +1,3 @@
 # portfolio
 
-A react photo gallery.
+My photo gallery powered by React.
