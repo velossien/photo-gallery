@@ -79,11 +79,11 @@ export default class ImageView extends React.Component {
     renderLoader() {
         const currentImgSrc = this.state.imgSrc;
         if (!this.state.loading) {
-            return <img src={`https://s3.amazonaws.com/kevingrimm.com/img/fullSize/${currentImgSrc}`} />
+            return <img src={`https://s3.amazonaws.com/taragrimm.com/images/fullsize/${currentImgSrc}`} />
         } else {
             return (
                 <div className="loader">
-                    <img src="https://s3.amazonaws.com/kevingrimm.com/img/double-ring.svg" />
+                    <img src="https://s3.amazonaws.com/taragrimm.com/images/double-ring.svg" />
                 </div>
             );
         }
@@ -111,7 +111,7 @@ export default class ImageView extends React.Component {
                     <div className="hidden-image-loader">
                         <img
                             onLoad={this.handleLoader}
-                            src={`https://s3.amazonaws.com/kevingrimm.com/img/fullSize/${currentImgSrc}`} />
+                            src={`https://s3.amazonaws.com/taragrimm.com/images/fullsize/${currentImgSrc}`} />
                     </div>
                     <div className="btn-block">
                         <div className="mobile-btn" onClick={this.previousImage}>&#8678;</div>
