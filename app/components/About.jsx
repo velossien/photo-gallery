@@ -16,7 +16,7 @@ export default class About extends React.Component {
                 
                 <div className="about-block">
                     <p className="center">
-                        Hi! I’m Tara Grimm, web developer, designer and photographer.  I’ve been interested in web development since I can remember, but college-me decided being a doctor would be cooler.  
+                        Hi! I’m Tara Grimm - web developer, designer, and photographer.  I’ve been interested in web development since I can remember, but college&#8209;me decided being a doctor would be cooler.  
                     </p>
                     <p className="center">
                         After getting a Doctorate in Optometry (has to do with eyeballs) - I practiced for a few years until I decided enough was enough and I made a lifetime hobby into a career.  
