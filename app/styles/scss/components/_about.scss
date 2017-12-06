@@ -1,54 +1,46 @@
-.About {
-	color: $primary-text-color;
-	line-height: 2rem;
-	letter-spacing: 0.05rem;
-	max-width: 43rem;
-	margin-left: auto;
-	margin-right: auto;
+.about {
+	padding-top: 7.5rem;
+	margin-left: 10%;
+	margin-right: 10%;
+	display: grid;
+	grid-template-columns: 50%, 50%;
+	grid-template-rows: 50%, 50%;
+	grid-template-areas:
+		"one two"
+		"three four";
+	justify-items: center;
+	align-items: center; 
+	grid-gap: 1rem;
 
-	@include breakpoint(md){
-		padding-left: 15%;
-		padding-right: 15%;
-	}
 
-	@include breakpoint(sm){
-		padding-left: 10%;
-		padding-right: 10%;
-	}
-
-	.pax-me-img{
-		width: 45%;
-		position:relative;
-		display: block;
-		float:left;
-		padding-top: 7.5rem;
-		padding-right:3rem;
-
-		@include breakpoint(md){
-			display:none;
+	.image1{
+		grid-area: "one";
+		background-color: green;
+		.pax-me-img{
+			max-width:20rem;
 		}
 	}
-	.about-block{
-		display: block;
-		padding-top: 8rem;
-		z-index:-1;
+
+	.about-block-1{
+		grid-area: "two";
 	}
 
-	p{
-		font-size: 0.90rem;
-		text-align: center;
-		text-decoration: none;
-	}	
-
-	.center {
-		text-align: center;
-		padding-bottom: 2rem;
+	.about-block-2{
+		grid-area: "three";
 	}
 
-	ul{
+	.image2{
+		grid-area: "four";
+		.camera-me-img{
+			max-width: 20rem;
+		}
+	}
+
+	.center{
 		text-align: center;
 		text-decoration: none;
-		padding-bottom:2rem;
+		font-size: 1.0rem;
+		line-height: 2.0rem;
 	}
 
 	a{

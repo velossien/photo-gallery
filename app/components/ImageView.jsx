@@ -114,11 +114,9 @@ export default class ImageView extends React.Component {
                             src={`https://s3.amazonaws.com/taragrimm.com/images/fullsize/${currentImgSrc}`} />
                     </div>
                     <div className="btn-block">
-                        {/* <div className="mobile-btn-arrow" onClick={this.previousImage}>&#8610;</div> */}
                         <div className="mobile-btn-arrow" onClick={this.previousImage}>&#171;</div>
                         <div className="mobile-btn" onClick={this.goBackGallery}>&#215;</div>
                         <div className="mobile-btn-arrow" onClick={this.nextImage}>&#187;</div>
-                        {/* <div className="mobile-btn" onClick={this.nextImage}>&#8611;</div> */}
                     </div>
                 </div>
             </div>
