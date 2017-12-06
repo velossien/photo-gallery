@@ -16,13 +16,13 @@
 		padding-right: 10%;
 	}
 
-	.my-img{
+	.pax-me-img{
+		width: 45%;
 		position:relative;
 		display: block;
 		float:left;
-		padding-top: 6.0rem;
+		padding-top: 7.5rem;
 		padding-right:3rem;
-		z-index:-1;
 
 		@include breakpoint(md){
 			display:none;
@@ -38,11 +38,11 @@
 		font-size: 0.90rem;
 		text-align: center;
 		text-decoration: none;
-		padding-bottom:3.0rem;
 	}	
 
 	.center {
 		text-align: center;
+		padding-bottom: 2rem;
 	}
 
 	ul{

@@ -5,7 +5,6 @@
 	@include breakpoint(md){
 		width:100%;
 	}
-
 }
 
 .image-view{
@@ -48,11 +47,13 @@
 
 		img{
 			max-width: 94%;
+			max-height: 100vh;
 			display: block;
 			margin:auto;
 
 			@include breakpoint(md){
 				max-width:100%;
+				max-height: 90vh;
 				margin:auto;
 			}
 		}

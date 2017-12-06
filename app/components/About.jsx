@@ -12,14 +12,19 @@ export default class About extends React.Component {
     render() {
         return (
             <div className="About">
-                <img className="my-img" src=""/>
+                <img className="pax-me-img" src="https://s3.amazonaws.com/taragrimm.com/images/paxme.jpg"/>
+                
                 <div className="about-block">
-                    <p className="center">It's me!</p>
+                    <p className="center">
+                        Hi! I’m Tara Grimm, web developer, designer and photographer.  I’ve been interested in web development since I can remember, but college-me decided being a doctor would be cooler.  
+                    </p>
+                    <p className="center">
+                        After getting a Doctorate in Optometry (has to do with eyeballs) - I practiced for a few years until I decided enough was enough and I made a lifetime hobby into a career.  
+                    </p>
+                    <p className="center">
+                        I’ve never looked back.
+                    </p>
                 </div>
-                <ul>
-                    <li>Stuff</li>
-                    <li>More Stuff</li>
-                </ul>
                 <p><a href="mailto:taragrimm.js@gmail.com">taragrimm.js@gmail.com</a></p>
                 <div className="copyright">
                     &copy; 2017 Grimm 

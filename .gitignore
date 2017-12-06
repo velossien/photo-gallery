@@ -58,3 +58,5 @@ config.JSON
 dist/
 
 package-lock\.json
+
+app/js/Images\.js
