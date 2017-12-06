@@ -19,7 +19,7 @@
 		float:right;
 		opacity: 0.5;
 		filter: alpha(opacity=50); /* For IE8 and earlier */
-		font-size: 1.5rem;
+		font-size: 2.0rem;
 		font-weight: 1000;
 
 		&:hover{
@@ -64,7 +64,7 @@
 
 		.arrow{
 			margin:0.5rem;
-			font-size: 2rem;
+			font-size: 2.5rem;
             cursor: pointer;
 			opacity: 0.5;
 			filter: alpha(opacity=50); /* For IE8 and earlier */
@@ -124,6 +124,22 @@
 					display:inline-block;
 					margin:auto;
 					font-size:2.0rem;
+					font-weight: 600;
+					padding: 0.7rem 1.5rem 0 2rem;
+					cursor: pointer;
+					opacity: 0.5;
+					filter: alpha(opacity=50); /* For IE8 and earlier */
+				
+					&:hover{
+						opacity: 1.0;
+						filter: alpha(opacity=100);  /* For IE8 and earlier */
+					}
+				}
+
+				.mobile-btn-arrow{
+					display:inline-block;
+					margin:auto;
+					font-size:2.3rem;
 					padding: 0.7rem 1.5rem 0 2rem;
 					cursor: pointer;
 					opacity: 0.5;

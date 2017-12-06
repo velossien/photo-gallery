@@ -97,9 +97,9 @@ export default class ImageView extends React.Component {
 
         return (
             <div className="image-view">
-                <div onClick={this.goBackGallery} className="back-button">x</div>
+                <div onClick={this.goBackGallery} className="back-button">&#215;</div>
                 <div className="img-block">
-                    <div onClick={this.previousImage} className="arrow">&#8678;</div>
+                    <div onClick={this.previousImage} className="arrow">&#8592;</div>
                     <Swipeable
                         delta={100}
                         onSwipedLeft={() => this.onSwiped("LEFT")}
@@ -107,16 +107,18 @@ export default class ImageView extends React.Component {
                     >
                         {this.renderLoader()}
                     </Swipeable>
-                    <div onClick={this.nextImage} className="arrow" >&#8680;</div>
+                    <div onClick={this.nextImage} className="arrow" >&#8594;</div>
                     <div className="hidden-image-loader">
                         <img
                             onLoad={this.handleLoader}
                             src={`https://s3.amazonaws.com/taragrimm.com/images/fullsize/${currentImgSrc}`} />
                     </div>
                     <div className="btn-block">
-                        <div className="mobile-btn" onClick={this.previousImage}>&#171;</div>
-                        <div className="mobile-btn" onClick={this.goBackGallery}>x</div>
-                        <div className="mobile-btn" onClick={this.nextImage}>&#187;</div>
+                        {/* <div className="mobile-btn-arrow" onClick={this.previousImage}>&#8610;</div> */}
+                        <div className="mobile-btn-arrow" onClick={this.previousImage}>&#171;</div>
+                        <div className="mobile-btn" onClick={this.goBackGallery}>&#215;</div>
+                        <div className="mobile-btn-arrow" onClick={this.nextImage}>&#187;</div>
+                        {/* <div className="mobile-btn" onClick={this.nextImage}>&#8611;</div> */}
                     </div>
                 </div>
             </div>
