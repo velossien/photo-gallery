@@ -47,6 +47,7 @@ class GalleryList extends React.Component {
                     fullSizeSrc={obj.fullSizeSrc}
                     key={obj.orderId}
                     id={obj.orderId}
+                    alt={obj.alt}
                 />
             );
         }));
@@ -65,7 +66,10 @@ class Image extends React.Component {
 
     render() {
         return (
-            <Link to={"/Gallery/" + this.props.title}><img className="image" src={this.props.thumbnailSrc} /></Link>
+            <Link to={{
+                pathname: "/Gallery/" + this.props.title, 
+                state:{ altText: this.props.alt }
+                }}><img className="image" alt={this.props.alt} src={this.props.thumbnailSrc} /></Link>
         );
     };
 };

@@ -11,7 +11,7 @@ export default class Menubar extends React.Component {
 
     render() {
         return (
-            <div className="menubar">
+            <nav className="menubar">
                 <ul>
                     <li className="title-block"><Link to="/Gallery">
                         <div>
@@ -23,7 +23,7 @@ export default class Menubar extends React.Component {
                         <li><NavLink activeClassName='active' to="/About">about</NavLink></li>
                     </div>
                 </ul>
-            </div>
+            </nav>
         )
     };
 };

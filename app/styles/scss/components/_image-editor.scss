@@ -43,5 +43,12 @@
 			color: white;
 			padding:0.625rem;
 		}
+
+		&:focus{
+			border: none;
+			background:$button-press-color;
+			color: white;
+			padding:0.625rem;
+		}
 	}
 }

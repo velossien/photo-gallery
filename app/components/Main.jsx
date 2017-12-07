@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import { StickyContainer, Sticky } from 'react-sticky';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import Menubar from '../components/Menubar.jsx';
 import Gallery from '../components/Gallery.jsx';

@@ -9,8 +9,9 @@ export default class ImageView extends React.Component {
 
         this.state = {
             imgSrc: this.props.match.params.fullSizeSrc,
-            loading: true
-        };
+            loading: true,
+            altText: ""
+        }
 
         this.goBackGallery = this.goBackGallery.bind(this);
         this.previousImage = this.previousImage.bind(this);
@@ -27,16 +28,22 @@ export default class ImageView extends React.Component {
     previousImage() {
         let currentImageIndex = images.map((img) => img.title).indexOf(this.state.imgSrc);
 
-        let previousImageTitle;
+        let newIndex;
         if (currentImageIndex == 0) {
+            newIndex = images.length-1;
             previousImageTitle = (images[(images.length) - 1].title);
         } else {
+            newIndex = currentImageIndex-1;
             previousImageTitle = images[(currentImageIndex - 1)].title;
         }
 
+        let previousImageTitle = images[newIndex].title;
+        let newAltText = images[newIndex].alt;
+
         this.setState({
             imgSrc: previousImageTitle,
-            loading: true
+            loading: true,
+            altText: newAltText
         });
 
         this.props.history.push("/Gallery/" + previousImageTitle);
@@ -45,16 +52,20 @@ export default class ImageView extends React.Component {
     nextImage() {
         let currentImageIndex = images.map((img) => img.title).indexOf(this.state.imgSrc);
 
-        let nextImageTitle;
+        let newIndex;
         if (currentImageIndex == (images.length - 1)) {
-            nextImageTitle = (images[0].title);
+            newIndex = 0;
         } else {
-            nextImageTitle = images[(currentImageIndex + 1)].title;
+            newIndex= currentImageIndex + 1;
         }
+
+        let nextImageTitle = images[newIndex].title;
+        let newAltText = images[newIndex].alt;
 
         this.setState({
             imgSrc: nextImageTitle,
-            loading: true
+            loading: true,
+            altText: newAltText
         });
 
         this.props.history.push("/Gallery/" + nextImageTitle);
@@ -62,6 +73,14 @@ export default class ImageView extends React.Component {
 
     componentDidMount() {
         this.props.onOpenImageView();
+
+        let currentImageIndex = images.map((img) => img.title).indexOf(this.state.imgSrc);
+        let newAltText = images[currentImageIndex].alt;
+
+        this.setState({
+            altText: newAltText
+        })
+        
     };
 
     onSwiped(direction) {
@@ -77,20 +96,18 @@ export default class ImageView extends React.Component {
     }
 
     renderLoader() {
-        const currentImgSrc = this.state.imgSrc;
+        let currentImgSrc = this.state.imgSrc;
+        let altText=this.state.altText
         if (!this.state.loading) {
-            return <img src={`https://s3.amazonaws.com/taragrimm.com/images/fullsize/${currentImgSrc}`} />
+            return <img alt={altText} src={`https://s3.amazonaws.com/taragrimm.com/images/fullsize/${currentImgSrc}`} />
         } else {
             return (
                 <div className="loader">
-                    <img src="https://s3.amazonaws.com/taragrimm.com/images/double-ring.svg" />
+                    <img alt="loading spinner showing the image is still loading" src="https://s3.amazonaws.com/taragrimm.com/images/double-ring.svg" />
                 </div>
             );
         }
     }
-
-
-
 
     render() {
         const currentImgSrc = this.state.imgSrc;

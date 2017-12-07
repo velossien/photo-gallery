@@ -18,6 +18,10 @@
 				opacity:0.9;
 			}
 
+			&:focus{
+				opacity:0.9;
+			}
+
 			@include breakpoint(lg){
 				width: calc(25% - 0.25rem); //4 images across
 			}

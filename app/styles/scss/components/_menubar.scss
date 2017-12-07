@@ -24,6 +24,10 @@
 				&:hover {
 					color: $menubar-link-hover-color;
 				}
+
+				&:focus {
+					color: $menubar-link-hover-color;
+				}
             }
     
 			.active{
