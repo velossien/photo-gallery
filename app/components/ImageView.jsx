@@ -10,7 +10,8 @@ export default class ImageView extends React.Component {
         this.state = {
             imgSrc: this.props.match.params.fullSizeSrc,
             loading: true,
-            altText: ""
+            altText: "",
+            imageTitles : images.map((img) => img.title)
         }
 
         this.goBackGallery = this.goBackGallery.bind(this);
@@ -26,7 +27,7 @@ export default class ImageView extends React.Component {
     }
 
     previousImage() {
-        let currentImageIndex = images.map((img) => img.title).indexOf(this.state.imgSrc);
+        let currentImageIndex = (this.state.imageTitles).indexOf(this.state.imgSrc);
 
         let newIndex;
         if (currentImageIndex == 0) {
@@ -50,7 +51,7 @@ export default class ImageView extends React.Component {
     }
 
     nextImage() {
-        let currentImageIndex = images.map((img) => img.title).indexOf(this.state.imgSrc);
+        let currentImageIndex = (this.state.imageTitles).indexOf(this.state.imgSrc);
 
         let newIndex;
         if (currentImageIndex == (images.length - 1)) {
@@ -74,7 +75,8 @@ export default class ImageView extends React.Component {
     componentDidMount() {
         this.props.onOpenImageView();
 
-        let currentImageIndex = images.map((img) => img.title).indexOf(this.state.imgSrc);
+
+        let currentImageIndex = (this.state.imageTitles).indexOf(this.state.imgSrc);
         let newAltText = images[currentImageIndex].alt;
 
         this.setState({
