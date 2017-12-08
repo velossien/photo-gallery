@@ -1,7 +1,7 @@
 .menubar {
 	ul {
+		position: fixed;	
 		background-color: $menubar-color;
-		position: fixed;
 		top:0;
 		font-size: 1rem;
 		line-height: 2rem;
@@ -12,10 +12,13 @@
 		min-width: $min-width;
 		z-index:2;
 
-				
-		li {
+		& > li {
+			&:nth-of-type(2){
+				margin-left:auto;
+			}
+
 			a {
-				display: block;
+				display: inline-block;
 				color: $primary-text-color;
 				text-decoration:none;
 				text-align: center;
@@ -28,28 +31,22 @@
 				&:focus {
 					color: $menubar-link-hover-color;
 				}
-            }
-    
+			}
+
 			.active{
 				color: $menubar-link-hover-color;
 			}
 		}
 
-		.nav-bar{
-			display:flex;
-			flex-direction:row;
-			justify-content: flex-end;
-			padding-right: 0.4rem;
-		}
-
 		.title-block{
-			a{
+			a{	
+				display: inline-block;
 				margin: 2.0rem 0rem 2.0rem 1.8rem;
 			}
 			h1{
 				font-size: 1.8rem;
 				font-weight: strong;
-
+		
 				.accent{
 					color: $secondary-color;
 				}
@@ -57,3 +54,4 @@
 		}
 	}
 }
+

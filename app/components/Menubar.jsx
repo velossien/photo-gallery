@@ -12,16 +12,16 @@ export default class Menubar extends React.Component {
     render() {
         return (
             <nav className="menubar">
-                <ul>
-                    <li className="title-block"><Link to="/Gallery">
-                        <div>
-                            <h1> <span className="accent">t</span>ara <span className="accent">g</span>rimm </h1>
-                        </div>
-                    </Link></li>
-                    <div className="nav-bar">
-                        <li><NavLink activeClassName='active' to="/Gallery">gallery</NavLink></li>
-                        <li><NavLink activeClassName='active' to="/About">about</NavLink></li>
-                    </div>
+                <ul className="nav-bar">
+                    <li className="title-block">
+                        <Link to="/Gallery">
+                            <div>
+                                <h1> <span className="accent">t</span>ara <span className="accent">g</span>rimm </h1>
+                            </div>
+                        </Link>
+                    </li>
+                    <li><NavLink activeClassName='active' to="/Gallery">gallery</NavLink></li>
+                    <li><NavLink activeClassName='active' to="/About">about</NavLink></li>
                 </ul>
             </nav>
         )

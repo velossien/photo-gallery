@@ -116,9 +116,9 @@ export default class ImageView extends React.Component {
 
         return (
             <div className="image-view">
-                <div onClick={this.goBackGallery} className="back-button">&#215;</div>
+                <button onClick={this.goBackGallery} className="back-button">&#215;</button>
                 <div className="img-block">
-                    <div onClick={this.previousImage} className="arrow">&#8592;</div>
+                    <button onClick={this.previousImage} className="arrow">&#8592;</button>
                     <Swipeable
                         delta={100}
                         onSwipedLeft={() => this.onSwiped("LEFT")}
@@ -126,16 +126,16 @@ export default class ImageView extends React.Component {
                     >
                         {this.renderLoader()}
                     </Swipeable>
-                    <div onClick={this.nextImage} className="arrow" >&#8594;</div>
+                    <button onClick={this.nextImage} className="arrow" >&#8594;</button>
                     <div className="hidden-image-loader">
                         <img
                             onLoad={this.handleLoader}
                             src={`https://s3.amazonaws.com/taragrimm.com/images/fullsize/${currentImgSrc}`} />
                     </div>
                     <div className="btn-block">
-                        <div className="mobile-btn-arrow" onClick={this.previousImage}>&#171;</div>
-                        <div className="mobile-btn" onClick={this.goBackGallery}>&#215;</div>
-                        <div className="mobile-btn-arrow" onClick={this.nextImage}>&#187;</div>
+                        <button className="mobile-btn-arrow" onClick={this.previousImage}>&#171;</button>
+                        <button className="mobile-btn" onClick={this.goBackGallery}>&#215;</button>
+                        <button className="mobile-btn-arrow" onClick={this.nextImage}>&#187;</button>
                     </div>
                 </div>
             </div>

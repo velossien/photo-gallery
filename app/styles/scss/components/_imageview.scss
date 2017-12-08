@@ -12,6 +12,7 @@
 	font-family: $font-stack;
 
 	.back-button{
+		background-color: rgba(255, 255, 255, 0);
 		padding-top: 0.125rem;
 		border: 0rem;
 		display: block;
@@ -68,6 +69,8 @@
 		}
 
 		.arrow{
+			background-color: rgba(255, 255, 255, 0);
+			border:0rem;
 			margin:0.5rem;
 			font-size: 2.5rem;
             cursor: pointer;
@@ -131,6 +134,8 @@
 				margin-top:1.5rem;
 
 				.mobile-btn{
+					background-color: rgba(255, 255, 255, 0);
+					border:0rem;
 					display:inline-block;
 					margin:auto;
 					font-size:2.0rem;
@@ -152,6 +157,8 @@
 				}
 
 				.mobile-btn-arrow{
+					background-color: rgba(255, 255, 255, 0);
+					border:0rem;
 					display:inline-block;
 					margin:auto;
 					font-size:2.3rem;
