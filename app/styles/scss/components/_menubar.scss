@@ -23,6 +23,8 @@
 				text-decoration:none;
 				text-align: center;
 				margin: 2.0rem 1.8rem 2.0rem 0rem;
+				-webkit-transtion: width 2s; /*Safari*/
+				transition: width 2s;
 
 				&:hover {
 					color: $menubar-link-hover-color;
@@ -43,6 +45,8 @@
 				display: inline-block;
 				margin: 2.0rem 0rem 2.0rem 1.8rem;
 			}
+			
+
 			h1{
 				font-size: 1.8rem;
 				font-weight: strong;
@@ -51,6 +55,17 @@
 					color: $secondary-color;
 				}
 			}
+		}
+
+		.nav-link{
+			a{
+				&:hover{
+					border-bottom: 0.05rem solid $menubar-link-hover-color;
+					padding-top: -0.5rem;
+				}
+			}
+			
+			
 		}
 	}
 }
