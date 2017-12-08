@@ -1,0 +1,13 @@
+{
+    "name": "Tara Grimm",
+    "short_name": "Tara Grimm",
+    "description": "A photography portfolio site for Tara Grimm",
+    "start_url": "/?homescreen=1",
+    "background_color": "#fff",
+    "theme_color": "#35B2D1",
+    "icons": [{
+      "src": "../dist/images/logo.png",
+      "sizes": "300x300",
+      "type": "image/png"
+    }]
+  }
