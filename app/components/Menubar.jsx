@@ -20,8 +20,8 @@ export default class Menubar extends React.Component {
                             </div>
                         </Link>
                     </li>
-                    <li className= "nav-link"><NavLink activeClassName='active' to="/Gallery">gallery</NavLink></li>
-                    <li className= "nav-link"><NavLink activeClassName='active' to="/About">about</NavLink></li>
+                    <li><NavLink className= "nav-link" activeClassName='active' to="/Gallery">gallery</NavLink></li>
+                    <li><NavLink className= "nav-link" activeClassName='active' to="/About">about</NavLink></li>
                 </ul>
             </nav>
         )

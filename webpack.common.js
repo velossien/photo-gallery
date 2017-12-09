@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ManifestPlugin = require('webpack-manifest-plugin');
 
 module.exports = {
     entry: {
@@ -10,6 +11,9 @@ module.exports = {
             template: __dirname + '/app/index.html',
             filename: 'index.html',
             inject: 'body'
+        }),
+        new ManifestPlugin({
+            fileName: 'asset-manifest.json'
         })
     ],
     module: {
