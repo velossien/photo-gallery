@@ -2,13 +2,13 @@
 	color: $primary-text-color;
 	line-height: 2rem;
 	letter-spacing: 0.05rem;
-	max-width: 43rem;
+	max-width: 45rem;
 	margin-left: auto;
 	margin-right: auto;
 
 	@include breakpoint(md){
-		padding-left: 15%;
-		padding-right: 15%;
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
 	}
 
 	@include breakpoint(sm){
@@ -16,22 +16,142 @@
 		padding-right: 10%;
 	}
 
-	.pax-me-img{
-		width: 45%;
-		position:relative;
-		display: block;
-		float:left;
-		padding-top: 7.5rem;
-		padding-right:3rem;
-
-		@include breakpoint(md){
-			display:none;
+	.image-box-1{
+		.pax-me-img{
+			width: 43%;
+			position:relative;
+			display: block;
+			float:left;
+			padding-top: 7.5rem;
+			padding-right:3rem;
+	
+			@include breakpoint(md){
+				width:45%;
+				padding-right:2rem;
+			}
+	
+			@include breakpoint(medsm){
+				display:none;
+			}
 		}
 	}
+
+	
 	.about-block{
 		display: block;
+		float:right;
+		position: relative;
 		padding-top: 8rem;
 		z-index:-1;
+		width: 50%;
+
+		@include breakpoint(md){
+			width:48%;
+		}
+
+		@include breakpoint(medsm){
+			width:65%;
+			float:none;
+			margin:auto;
+		}
+
+		@include breakpoint(sm){
+			width:90%;
+		}
+		
+
+		.box-of-icons{
+			-webkit-flex: 1; /* Safari 6.1+ */
+			-ms-flex: 1; /* IE 10 */ 
+			flex: 1;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+	
+			.social-icons{
+				display:block;
+				height: 2rem;
+				width: 2rem;
+				margin: 0.5rem;
+			}
+			
+			#email{
+				background: url("https://s3.amazonaws.com/taragrimm.com/images/icons/email-blue.png") no-repeat;
+				background-size: contain;
+
+				&:hover{
+					background: url("https://s3.amazonaws.com/taragrimm.com/images/icons/email-grey.png") no-repeat;
+					background-size: contain;
+				}
+
+				&:focus{
+					background: url("https://s3.amazonaws.com/taragrimm.com/images/icons/email-grey.png") no-repeat;
+					background-size: contain;
+				}
+			}
+	
+			#twitter{
+				background: url("https://s3.amazonaws.com/taragrimm.com/images/icons/twitter-blue.png") no-repeat;
+				background-size: contain;
+
+				&:hover{
+					background: url("https://s3.amazonaws.com/taragrimm.com/images/icons/twitter-grey.png") no-repeat;
+					background-size: contain;
+				}
+
+				&:focus{
+					background: url("https://s3.amazonaws.com/taragrimm.com/images/icons/twitter-grey.png") no-repeat;
+					background-size: contain;
+				}
+
+				
+			}
+	
+			#instagram{
+				background: url("https://s3.amazonaws.com/taragrimm.com/images/icons/instagram-blue.png") no-repeat;
+				background-size: contain;
+
+				&:hover{
+					background: url("https://s3.amazonaws.com/taragrimm.com/images/icons/instagram-grey.png") no-repeat;
+					background-size: contain;
+				}
+
+				&:focus{
+					background: url("https://s3.amazonaws.com/taragrimm.com/images/icons/instagram-grey.png") no-repeat;
+					background-size: contain;
+				}
+			}
+	
+			#linkedin{
+				background: url("https://s3.amazonaws.com/taragrimm.com/images/icons/linkedin-blue.png") no-repeat;
+				background-size: contain;
+
+				&:hover{
+					background: url("https://s3.amazonaws.com/taragrimm.com/images/icons/linkedin-grey.png") no-repeat;
+					background-size: contain;
+				}
+
+				&:focus{
+					background: url("https://s3.amazonaws.com/taragrimm.com/images/icons/linkedin-grey.png") no-repeat;
+					background-size: contain;
+				}
+			}
+	
+			#github{
+				background: url("https://s3.amazonaws.com/taragrimm.com/images/icons/github-blue.png") no-repeat;
+				background-size: contain;
+
+				&:hover{
+					background: url("https://s3.amazonaws.com/taragrimm.com/images/icons/github-grey.png") no-repeat;
+					background-size: contain;
+				}
+
+				&:focus{
+					background: url("https://s3.amazonaws.com/taragrimm.com/images/icons/github-grey.png") no-repeat;
+					background-size: contain;
+				}
+			}
+		}
 	}
 
 	p{
@@ -52,6 +172,7 @@
 	}
 
 	a{
+		z-index:1;
 		text-decoration:none;
 		color: $link-color;
 
@@ -63,4 +184,10 @@
 			color: $link-hover-color;
 		}
 	}
+}
+
+
+.contact-copy{ 
+	padding-top: 95vh !important;
+	display: block;
 }

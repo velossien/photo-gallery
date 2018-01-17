@@ -11,6 +11,9 @@
   @else if $point == md { 
       @media screen and (max-width: $screen-md-max)  { @content ; }
    }
+  @else if $point == medsm { 
+    @media screen and (max-width: $screen-medsm-max)  { @content ; }
+  }
    @else if $point == sm {
       @media screen and (max-width: $screen-sm-max)  { @content ; }
  

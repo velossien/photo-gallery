@@ -1,0 +1,68 @@
+.about {
+	padding-top: 7.5rem;
+	margin-left: 10%;
+	margin-right: 10%;
+	display: grid;
+	grid-template-columns: 50%, 50%;
+	grid-template-rows: 50%, 50%;
+	grid-template-areas:
+		"one two"
+		"three four";
+	justify-items: center;
+	align-items: center; 
+	grid-gap: 1rem;
+
+
+	.image-box-1{
+		grid-area: "one";
+		justify-self: end;
+		.pax-me-img{
+			max-width:20rem;
+			width: 100%;
+		}
+	}
+
+	.about-block-1{
+		grid-area: "two";
+		justify-self: start;
+
+	}
+
+	.about-block-2{
+		grid-area: "three";
+		justify-self: end;
+	}
+
+	.image-box-2{
+		grid-area: "four";
+		justify-self: start;
+		.camera-me-img{
+			max-width: 20rem;
+		}
+	}
+
+	.about-block{
+		max-width: 25rem;
+		
+	}
+	.center{
+		text-align: center;
+		text-decoration: none;
+		font-size: 1.0rem;
+		line-height: 2.0rem;
+	}
+
+	a{
+		text-decoration:none;
+		color: $link-color;
+
+		&:hover {
+			color: $link-hover-color;
+		}
+
+		&:focus{
+			color: $link-hover-color;
+		}
+		
+	}
+}
