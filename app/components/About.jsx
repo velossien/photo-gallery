@@ -14,7 +14,7 @@ export default class About extends React.Component {
         return (
             <div>
                 <div className="about">
-                    <div className="image-box-1">
+                    <div className="image-box">
                         <img alt="A young creative woman smiling at a PAX convention" className="pax-me-img" src="https://s3.amazonaws.com/taragrimm.com/images/paxme.jpg" />
                     </div>
 
@@ -36,18 +36,6 @@ export default class About extends React.Component {
                             <a href="https://github.com/velossien"><div className="social-icons" id="github"></div></a>
                         </div>
                     </div>
-                    
-
-                    {/* <div className="about-block-2">
-                        <div className="about-block">
-                            <p className="center">
-                                I work with mainly React, but I have been learning more technologies such as NodeJs and Ruby on Rails.  
-                            </p>
-                        </div>
-                    </div>
-                    <div className="image-box-2">
-                        <img className="camera-me-img" alt="a young photographer taking a photograph of a japanese temple" src="https://s3.amazonaws.com/taragrimm.com/images/camerame.jpg" />
-                    </div> */}
                 </div>
 
                 <div className="copyright contact-copy">

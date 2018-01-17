@@ -16,7 +16,7 @@
 		padding-right: 10%;
 	}
 
-	.image-box-1{
+	.image-box{
 		.pax-me-img{
 			width: 43%;
 			position:relative;
@@ -42,7 +42,6 @@
 		float:right;
 		position: relative;
 		padding-top: 8rem;
-		z-index:-1;
 		width: 50%;
 
 		@include breakpoint(md){
