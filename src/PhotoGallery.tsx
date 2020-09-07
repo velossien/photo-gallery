@@ -1,11 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
+import GalleryProvider from './context/GalleryProvider';
+import MenuBar from './components/MenuBar';
 
 const PhotoGallery = () => {
   return (
-    <>
+    <GalleryProvider>
       <Router>
-        <div>
+        <div className="photo-gallery-wrapper">
+          <MenuBar />
           <Switch>
             <Route exact path="/" render={() => <Redirect to="/gallery" />} />
             <Route exact path="/about">
@@ -17,7 +20,7 @@ const PhotoGallery = () => {
           </Switch>
         </div>
       </Router>
-    </>
+    </GalleryProvider>
   );
 };
 

@@ -1,0 +1,44 @@
+.menu-bar-container {
+  position: fixed;
+  background-color: $primary-color;
+  top: 0;
+  width: 100vw;
+  display: flex;
+  line-height: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.menu-bar-title-block {
+  display: inline-block;
+  margin: 2rem 0rem 2rem 2rem;
+  white-space: nowrap;
+
+  a {
+    font-size: 2rem;
+    font-weight: strong;
+
+    .accent {
+      color: $secondary-color;
+    }
+  }
+
+  a:hover {
+    color: $secondary-color;
+  }
+}
+
+.menu-bar-nav-bar {
+  display: flex;
+  margin-right: 2rem;
+}
+
+.menu-bar-linkies {
+  margin-left: 20px;
+  white-space: nowrap;
+
+  a:hover {
+    color: $secondary-color;
+  }
+}
