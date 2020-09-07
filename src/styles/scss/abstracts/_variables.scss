@@ -1,0 +1,30 @@
+$font-stack: ("museo-sans",sans-serif);
+
+$primary-color: rgb(253, 253, 253);
+$secondary-color: #35B2D1;
+$primary-text-color: #353535;
+$link-color: $secondary-color;
+$link-hover-color:rgb(155, 155, 155);
+$menubar-color: $primary-color;
+$menubar-link-hover-color: $secondary-color;
+$button-press-color:#111;
+$min-width:23.75rem;
+
+//Breakpoints
+//Very large tablets/computers-> mainContainer slightly larger (1350px) 
+$screen-huge-max: 84.38rem;  
+
+//Large tablets/computers-> mainContainer 100% width (1200px) 
+$screen-xl-max: 75rem; 
+
+//Tablets and small computers-> 4 images in a row instead of 6 in the Gallery (1000px) 
+$screen-lg-max: 62.5rem; 
+
+//Small tablets-> Change to mobile view (800px)
+$screen-md-max: 50rem;
+
+//700px
+$screen-medsm-max: 44rem;
+
+//Small tablets and large smartphones->2 images in a row instead of 4 in the Gallery (600px)
+$screen-sm-max:37.5rem;
