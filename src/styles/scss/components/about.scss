@@ -1,0 +1,27 @@
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 100px auto;
+
+  .about-image {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px;
+  }
+
+  .about-bio {
+    max-width: 400px;
+    padding: 3rem;
+    text-align: justify;
+
+    p {
+      margin: 1rem 0;
+    }
+  }
+}
+
+
+

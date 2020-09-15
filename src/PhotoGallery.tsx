@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import GalleryProvider from './context/GalleryProvider';
 import MenuBar from './components/MenuBar';
+import Gallery from './components/Gallery';
+import About from './components/About';
 
 const PhotoGallery = () => {
   return (
@@ -12,10 +14,10 @@ const PhotoGallery = () => {
           <Switch>
             <Route exact path="/" render={() => <Redirect to="/gallery" />} />
             <Route exact path="/about">
-              <div>About</div>
+              <About />
             </Route>
             <Route exact path="/gallery">
-              <div>Gallery</div>
+              <Gallery />
             </Route>
           </Switch>
         </div>

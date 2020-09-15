@@ -1,0 +1,11 @@
+.gallery-container {
+  padding: 95px 15px 15px 15px;
+
+  @media (max-width: 768px) {
+    padding: 95px 0 0 0;
+  }
+
+  @media (max-width: 445px) {
+    padding-top: 110px;
+  }
+}
